@@ -1,4 +1,10 @@
-<h1>Todos</h1>
-<ul>
-   <li ng-repeat="todo in todos">{{todo.description}}</li> 
-</ul>
+<div class="todos">
+    <ul>
+        <li ng-repeat="todo in todos">
+            <a href>
+                <span class="checkbox" ng-class="{checked:todo.done}"></span>
+                <span class="description">{{todo.description}}</span>
+            </a>
+        </li> 
+    </ul>
+</div>

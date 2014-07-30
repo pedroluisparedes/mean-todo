@@ -5,6 +5,15 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 
 body {
     background: url('/assets/images/background.png') repeat;
+    font-family: Arial;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 // Component styles are injected through grunt
