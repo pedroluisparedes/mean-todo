@@ -1,0 +1,32 @@
+.todo {
+    border-bottom: #e6ebed solid 1px;
+    padding: 0;
+    margin: 0;
+
+    a {
+        @include clearfix;
+        display: block;
+        color: #8b8f97;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .checkbox {
+        display: inline-block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        background: url('/assets/images/undone.png') no-repeat 50% 50%;
+
+        &.checked {
+            background-image: url('/assets/images/done.png');
+        }
+    }
+
+    .description {
+        display: inline-block;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+    }
+}

@@ -1,10 +1,5 @@
 <div class="todos">
     <ul>
-        <li ng-repeat="todo in todos">
-            <a href>
-                <span class="checkbox" ng-class="{checked:todo.done}"></span>
-                <span class="description">{{todo.description}}</span>
-            </a>
-        </li> 
+        <todo ng-repeat="todo in todos" todo="todo" toggle="toggle(todo)"></todo>
     </ul>
 </div>
