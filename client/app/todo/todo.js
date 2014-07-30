@@ -3,9 +3,9 @@
 angular.module('todoApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('main', {
+      .state('todo', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'app/todo/todo.html',
+        controller: 'TodoCtrl'
       });
   });
